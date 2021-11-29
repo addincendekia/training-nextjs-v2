@@ -1,0 +1,12 @@
+getInitialProps : (timestamp video - +-1.30.00)
+- digunakan untuk initialisasi data pada saat diserver, dapat mengirimnya ke component melaui props
+- bawaan fungsi dari react
+- dapat digunakan diberbagai tempat
+- di jalankan dari sisi server dan juga sisi client, mengakibatkan proses render lebih lama.
+- lebih dianjurkan menggunakan getServerSideProps
+
+getServerSideProps :
+- fungsi sama dengan getInitialProps
+- bawaan fungsi dari nexjs
+- hanya dapat digunakan under pages directory
+- hanya di jalankan di sisi server saja
