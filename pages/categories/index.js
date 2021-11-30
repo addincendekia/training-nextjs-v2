@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import Button from '@mui/material/Button'
 import styles from '../../styles/Home.module.css'
@@ -63,7 +64,11 @@ const Categories = () => {
                         <h2>{item.name} &rarr;</h2>
                         <p>{item.description}</p>
 
+                    <Link href={`categories/${item.id}`}>
+                      <a>
                         <Button classes={{ root: classes.root }} variant="contained" fullWidth>Lihat Detail</Button>
+                      </a>
+                    </Link>
                     </a>
                 );
             })}
